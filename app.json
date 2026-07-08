@@ -14,7 +14,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.aibusinessassistant.resumebuilder",
+      "bundleIdentifier": "com.aibusinessassistant.ai.airesumebuilderpro",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
@@ -25,7 +25,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1E6FD9"
       },
-      "package": "com.aibusinessassistant.resumebuilder",
+      "package": "com.aibusinessassistant.ai.airesumebuilderpro",
       "versionCode": 1
     },
     "web": {
