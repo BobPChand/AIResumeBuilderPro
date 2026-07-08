@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder Pro - Land Your Next Job Faster</title>
+    <meta name="description" content="Generate ATS-optimized resumes and personalized cover letters tailored to any job posting, powered by AI. 7-day free trial.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.6; }
+
+        .hero { background: linear-gradient(135deg, #1E6FD9 0%, #123E85 100%); color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-size: 3rem; margin-bottom: 16px; font-weight: 800; }
+        .hero p { font-size: 1.3rem; max-width: 600px; margin: 0 auto 32px; opacity: 0.95; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 16px; border-radius: 20px; font-size: 0.9rem; margin-bottom: 24px; }
+        .cta-btn { display: inline-block; background: white; color: #1E6FD9; padding: 16px 40px; border-radius: 12px; font-size: 1.1rem; font-weight: 700; text-decoration: none; transition: transform 0.2s; }
+        .cta-btn:hover { transform: scale(1.05); }
+
+        .features { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+        .features h2 { text-align: center; font-size: 2.2rem; margin-bottom: 48px; color: #1a1a2e; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+        .feature-card { background: #f4f8fd; border-radius: 16px; padding: 32px; text-align: center; border: 1px solid #e2ecf9; }
+        .feature-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+        .feature-card h3 { font-size: 1.2rem; margin-bottom: 8px; color: #1E6FD9; }
+        .feature-card p { color: #555; font-size: 0.95rem; }
+
+        .how { background: #1a1a2e; color: white; padding: 80px 20px; }
+        .how h2 { text-align: center; font-size: 2.2rem; margin-bottom: 48px; }
+        .steps { max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; }
+        .step { text-align: center; }
+        .step .num { width: 48px; height: 48px; background: #1E6FD9; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; margin: 0 auto 16px; }
+        .step h4 { font-size: 1.1rem; margin-bottom: 8px; }
+        .step p { color: #999; font-size: 0.9rem; }
+
+        .pricing { padding: 80px 20px; max-width: 900px; margin: 0 auto; }
+        .pricing h2 { text-align: center; font-size: 2.2rem; margin-bottom: 16px; }
+        .pricing .sub { text-align: center; color: #666; margin-bottom: 48px; font-size: 1.1rem; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+        .price-card { background: white; border-radius: 16px; padding: 40px 32px; text-align: center; border: 2px solid #e2ecf9; position: relative; transition: box-shadow 0.2s; }
+        .price-card:hover { box-shadow: 0 8px 30px rgba(30, 111, 217, 0.15); }
+        .price-card.featured { border-color: #1E6FD9; border-width: 2px; }
+        .price-card .save-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #1E6FD9; color: white; padding: 4px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; }
+        .price-card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+        .price-card .price { font-size: 2.5rem; font-weight: 800; color: #1a1a2e; margin: 16px 0; }
+        .price-card .price span { font-size: 1rem; font-weight: 400; color: #777; }
+        .price-card .trial { color: #10b981; font-weight: 600; margin-bottom: 24px; font-size: 0.9rem; }
+        .price-card ul { list-style: none; margin-bottom: 32px; text-align: left; }
+        .price-card ul li { padding: 8px 0; color: #444; font-size: 0.95rem; border-bottom: 1px solid #f0f0f0; }
+        .price-card ul li:last-child { border-bottom: none; }
+        .price-card .check { color: #1E6FD9; font-weight: 700; margin-right: 8px; }
+        .price-btn { display: block; width: 100%; padding: 14px; border-radius: 10px; font-size: 1rem; font-weight: 700; text-decoration: none; border: none; cursor: pointer; transition: transform 0.15s; }
+        .price-btn:hover { transform: scale(1.02); }
+        .price-btn.primary { background: #1E6FD9; color: white; }
+
+        footer { background: #12122a; color: #888; padding: 40px 20px; text-align: center; }
+        footer a { color: #aaa; text-decoration: none; margin: 0 12px; font-size: 0.9rem; }
+        footer a:hover { color: white; }
+        footer .copyright { margin-top: 16px; font-size: 0.85rem; }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+            .features h2, .pricing h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="badge">7-Day Free Trial - No Credit Card Required</div>
+        <h1>AI Resume Builder Pro</h1>
+        <p>Generate ATS-optimized resumes and personalized cover letters tailored to any job posting in seconds. Stop guessing what recruiters want — let AI match the keywords for you.</p>
+        <a href="#pricing" class="cta-btn">Start Free Trial</a>
+    </section>
+
+    <section class="features">
+        <h2>Everything you need to land the interview</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">📄</div>
+                <h3>ATS-Optimized Resumes</h3>
+                <p>Every resume is tailored to the exact job description, matching the keywords applicant tracking systems scan for.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">✉️</div>
+                <h3>Personalized Cover Letters</h3>
+                <p>Compelling, role-specific cover letters in your chosen tone — professional, enthusiastic, confident, or friendly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">👤</div>
+                <h3>One-Time Profile Setup</h3>
+                <p>Enter your experience once. Every resume and cover letter after that is generated in seconds.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📋</div>
+                <h3>Full History</h3>
+                <p>Every resume and cover letter saved automatically. Browse, copy, and reuse for every application.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how">
+        <h2>How it works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="num">1</div>
+                <h4>Build Your Profile</h4>
+                <p>Add your experience, education, and skills. One-time setup.</p>
+            </div>
+            <div class="step">
+                <div class="num">2</div>
+                <h4>Paste the Job Posting</h4>
+                <p>Copy the job description you're applying for.</p>
+            </div>
+            <div class="step">
+                <div class="num">3</div>
+                <h4>Generate Instantly</h4>
+                <p>AI writes a tailored resume or cover letter in seconds.</p>
+            </div>
+            <div class="step">
+                <div class="num">4</div>
+                <h4>Copy and Apply</h4>
+                <p>Copy your content and submit your application with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h2>Simple, transparent pricing</h2>
+        <p class="sub">7-day free trial. Cancel anytime.</p>
+        <div class="price-grid">
+            <div class="price-card featured">
+                <div class="save-badge">Most Popular</div>
+                <h3>Monthly</h3>
+                <div class="price">$14.99<span>/month</span></div>
+                <div class="trial">7-day free trial</div>
+                <ul>
+                    <li><span class="check">✓</span>Unlimited resumes</li>
+                    <li><span class="check">✓</span>Unlimited cover letters</li>
+                    <li><span class="check">✓</span>ATS keyword optimization</li>
+                    <li><span class="check">✓</span>Full generation history</li>
+                </ul>
+                <a href="https://buy.stripe.com/6oU4gz5AUeArbdF0wc6Vq0b" class="price-btn primary">Start Free Trial</a>
+            </div>
+            <div class="price-card">
+                <h3>Yearly</h3>
+                <div class="price">$119.99<span>/year</span></div>
+                <div class="trial">7-day free trial - Save 33%</div>
+                <ul>
+                    <li><span class="check">✓</span>Everything in Monthly</li>
+                    <li><span class="check">✓</span>Save 33% vs monthly</li>
+                    <li><span class="check">✓</span>Priority support</li>
+                </ul>
+                <a href="https://buy.stripe.com/dRm00jgfy63VdlN0wc6Vq0c" class="price-btn primary">Start Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#pricing">Pricing</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="https://github.com/BobPChand/AIResumeBuilderPro">Support</a>
+        <div class="copyright">&copy; 2026 AI Resume Builder Pro. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>
