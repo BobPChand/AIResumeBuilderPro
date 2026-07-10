@@ -32,6 +32,9 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
+    "plugins": [
+      "react-native-purchases"
+    ],
     "extra": {
       "eas": {
         "projectId": ""
