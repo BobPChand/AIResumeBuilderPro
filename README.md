@@ -1,5 +1,9 @@
 # AI Resume Builder Pro
 
+## Repository Purpose
+This repository is the dedicated codebase for AI Resume Builder Pro.
+It should not be used for ContentAI Pro or AI Invoice Generator changes.
+
 AI-powered resume and cover letter builder, tailored to any job description. Built with React Native / Expo for iOS & Android.
 
 ## Features
