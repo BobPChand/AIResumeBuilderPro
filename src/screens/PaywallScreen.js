@@ -228,7 +228,7 @@ export default function PaywallScreen({ navigation }) {
         {Platform.OS === 'ios' && (
           <TouchableOpacity style={styles.restoreButton} onPress={handleIOSRestore} disabled={restoring}>
             {restoring
-              ? <ActivityIndicator size="small" color="#8E8E93" />
+              ? <ActivityIndicator size="small" color="#1E6FD9" />
               : <Text style={styles.restoreText}>Restore Purchases</Text>}
           </TouchableOpacity>
         )}
@@ -236,7 +236,7 @@ export default function PaywallScreen({ navigation }) {
         {/* Footer */}
         <Text style={styles.footer}>
           {Platform.OS === 'ios'
-            ? 'Payment will be charged to your Apple ID account. Subscription renews automatically unless cancelled at least 24 hours before the end of the current period. Cancel anytime in App Store settings.'
+            ? 'Payment will be charged to your Apple ID account at confirmation of purchase. Subscription automatically renews unless cancelled at least 24 hours before the end of the current period. Manage or cancel subscriptions in your Apple ID Account Settings.'
             : 'No charge for 7 days · Secure payment · Cancel anytime'}
         </Text>
 
@@ -274,6 +274,6 @@ const styles = StyleSheet.create({
   ctaText: { color: '#fff', fontSize: 18, fontWeight: 'bold' },
   ctaSub: { color: 'rgba(255,255,255,0.8)', fontSize: 12, marginTop: 4 },
   restoreButton: { alignItems: 'center', paddingVertical: 12, marginBottom: 8 },
-  restoreText: { color: '#8E8E93', fontSize: 14, textDecorationLine: 'underline' },
+  restoreText: { color: '#1E6FD9', fontSize: 15, fontWeight: '600', textDecorationLine: 'underline' },
   footer: { textAlign: 'center', fontSize: 11, color: '#8E8E93', lineHeight: 16, marginTop: 8 },
 });
