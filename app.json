@@ -18,9 +18,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "ai.airesumebuilderpro.app",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleDisplayName": "AI Resume Builder Pro"
       },
-      "buildNumber": "1"
+      "buildNumber": "3"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,7 +29,7 @@
         "backgroundColor": "#1E6FD9"
       },
       "package": "ai.airesumebuilderpro.app",
-      "versionCode": 1
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png",
