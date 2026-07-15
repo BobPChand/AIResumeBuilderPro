@@ -11,10 +11,12 @@
       "resizeMode": "contain",
       "image": "./assets/splash.png"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.aibusinessassistant.ai.airesumebuilderpro",
+      "bundleIdentifier": "ai.airesumebuilderpro.app",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
@@ -25,21 +27,18 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1E6FD9"
       },
-      "package": "com.aibusinessassistant.ai.airesumebuilderpro",
+      "package": "ai.airesumebuilderpro.app",
       "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": [
-      "react-native-purchases"
-    ],
     "extra": {
       "eas": {
-        "projectId": ""
+        "projectId": "a6daf674-143b-4d23-90b4-f58db93dbb27"
       }
     },
-    "owner": "bobpchand"
+    "owner": "aibusinessassistant.ai"
   }
 }
