@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 // ─── Replace with your RevenueCat API keys ────────────────────────────────────
 // iOS key: RevenueCat Dashboard → Project → API Keys → iOS (starts with appl_)
 // Android key: RevenueCat Dashboard → Project → API Keys → Android
-const REVENUECAT_IOS_KEY = 'PASTE_YOUR_IOS_PUBLIC_KEY_HERE';
+const REVENUECAT_IOS_KEY = 'appl_mQirzUNOkoyePqxgcGTIMavyzzQ';
 const REVENUECAT_ANDROID_KEY = 'PASTE_YOUR_ANDROID_PUBLIC_KEY_HERE';
 
 // Must match the entitlement identifier in your RevenueCat dashboard
