@@ -13,7 +13,10 @@
     },
     "production": {
       "autoIncrement": true,
-      "credentialsSource": "remote"
+      "credentialsSource": "remote",
+      "ios": {
+        "image": "latest"
+      }
     }
   },
   "submit": {
