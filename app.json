@@ -21,7 +21,7 @@
         "ITSAppUsesNonExemptEncryption": false,
         "CFBundleDisplayName": "AI Resume Builder Pro"
       },
-      "buildNumber": "5"
+      "buildNumber": "6"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,7 +29,7 @@
         "backgroundColor": "#1E6FD9"
       },
       "package": "ai.airesumebuilderpro.app",
-      "versionCode": 5
+      "versionCode": 6
     },
     "web": {
       "favicon": "./assets/favicon.png",
